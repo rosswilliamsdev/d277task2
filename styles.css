@@ -1,0 +1,9 @@
+body {
+    background-image: url("images/capitol.jpg");
+    background-size: cover;
+}
+.nav_logo {
+    height: 40px;
+    width: auto;
+
+}
