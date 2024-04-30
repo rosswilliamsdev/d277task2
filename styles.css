@@ -1,9 +1,86 @@
-body {
-    background-image: url("images/capitol.jpg");
-    background-size: cover;
-}
+
+
+/* ------------NAVBAR----------------------- */
 .nav_logo {
     height: 40px;
     width: auto;
-
 }
+
+/*------------------------------------------------------------ HOMEPAGE------------------- */
+
+/*------------------HOMEPAGE HEADER */
+.index_body {
+    background-image: url("images/capitol.jpg");
+    background-size: cover;
+}
+
+.hero {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    color: white;
+    border-radius: 10px;
+    width: 66%;
+    margin: auto;
+}
+
+.welcome_h1 {
+    color: white;
+}
+
+.slogan {
+    font-style: italic;
+}
+
+#index_blurb {
+    font-weight: 350;
+}
+
+/*----------------------- HOMEPAGE SECTION */
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    color: white;
+    border-radius: 10px;
+    width: 55%;
+    margin: auto;
+}
+
+.section-header h2 {
+    margin: 0;
+}
+
+.fact-list ul {
+    list-style: none;
+}
+
+.fact-list ul li::before {
+    content: "\1F33B"; /* Unicode for sunflower emoji */
+    display: inline-block;
+    margin-right: 5px; 
+}
+.fact-list {
+    width: 45%; 
+}
+
+.fact-list h3 {
+    margin-top: 0;
+}
+
+.flag-image {
+    width: 45%; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flag-image img {
+    max-width: 50%;
+    height: auto;
+    position: relative;
+}
+
+
