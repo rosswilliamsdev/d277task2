@@ -1,86 +1,213 @@
+/* -----------------------------------------------------COLORS
+ KS Flag blue #002069
+ KS Flag gold #fcd200 
+*/
 
-
-/* ------------NAVBAR----------------------- */
-.nav_logo {
-    height: 40px;
-    width: auto;
+/* ------------------------------------------------------General Styles */
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
 }
 
-/*------------------------------------------------------------ HOMEPAGE------------------- */
-
-/*------------------HOMEPAGE HEADER */
-.index_body {
-    background-image: url("images/capitol.jpg");
-    background-size: cover;
+body {
+  background-color: whitesmoke;
 }
 
-.hero {
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: -1;
-    color: white;
-    border-radius: 10px;
-    width: 66%;
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #002069;
+  color: white;
+  text-decoration: none; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: .5rem;
+}
+
+.button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* .text_overlay {
+  background-color: rgba(51, 51, 51, 0.5); 
+    color: #fff;
     margin: auto;
-}
+} */
 
-.welcome_h1 {
-    color: white;
-}
 
-.slogan {
+/* --------------------------------------------------------Navbar */
+
+nav {
+    background-color: rgba(51, 51, 51, 0.5); /* Background color with 80% opacity */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .nav_logo {
+    width: 50px; /* Adjust the width of your logo */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 20px; /* Adjust spacing between navbar items */
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff; /* Text color of navbar items */
+  }
+  
+  a:hover {
+    color: rgba(0,32,105,255); /* Text color on hover */
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  input[type="search"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  button[type="submit"] {
+    background-color: #555; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: 5px; /* Adjust spacing between search input and button */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #002069; /* Button background color on hover */
+  }
+  
+ 
+  /* ---------------------------------------------------------INDEX */
+
+
+  .hero, .index_section {
+    margin: auto;
+    width: 66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    border-radius: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  .slogan {
     font-style: italic;
-}
+    margin-bottom: .5rem;
+  }
 
-#index_blurb {
-    font-weight: 350;
-}
 
-/*----------------------- HOMEPAGE SECTION */
 
-.section-header {
+  .hero_intro {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: -1;
-    color: white;
-    border-radius: 10px;
-    width: 55%;
+    padding: .5rem;
     margin: auto;
+    width: 75%;
+  }
+
+
+.index_section {
+  justify-content: space-around;
+  flex-direction: row;
+  width: 50%;
 }
 
-.section-header h2 {
-    margin: 0;
+.sunflower-list li {
+  list-style: none;
+  clear: both; 
 }
 
-.fact-list ul {
-    list-style: none;
+/* For the sunflower emojis */
+.sunflower-list li::before {
+  content: "\1F33B"; 
+  float: left;
+  font-size: 1.1rem; 
+  position: relative;
+  bottom: 5px;
 }
 
-.fact-list ul li::before {
-    content: "\1F33B"; /* Unicode for sunflower emoji */
-    display: inline-block;
-    margin-right: 5px; 
-}
-.fact-list {
-    width: 45%; 
+.sunflowers_img {
+  width: 15rem;
+  height: auto;
+  border-radius: .5rem;
 }
 
-.fact-list h3 {
-    margin-top: 0;
-}
-
-.flag-image {
-    width: 45%; 
-    display: flex;
-    justify-content: flex-end;
-}
-
-.flag-image img {
-    max-width: 50%;
+  .ks_flag {
+    width: 25rem;
     height: auto;
+    margin: auto;
+    border-radius: .5rem;
+  }
+
+  /* ------------------------------------------------------Topeka */
+
+  /* Carousel */
+
+  .carousel {
     position: relative;
-}
-
-
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 100%;
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+  
