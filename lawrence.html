@@ -32,12 +32,41 @@
             <button type="submit">Search</button>
         </form>
     </nav>
-    <div>
-        <p>Population: Approximately 100,000 (including the university population)</p>
-        <p>Year of Incorporation: 1854</p>
-        <p>Region: East-Central region of the state</p>
-        <p>Classification: Urban</p>
-        <p>Average Income Level: Lawrence's average income level can vary but generally falls around the state average.</p>
+    <header class="hero">
+        <h1>Lawrence</h1>
+        <h4 class="slogan">Home to the University of Kansas</h4>
+        <div class="carousel_container">
+            <button class="carousel_button" id="prevBtn" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel_slide">
+                <img src="/images/carousel/college_classroom.jpg" class="carousel_image" alt="College lecture hall"/>
+                <img src="/images/carousel/java_break.jpg" class="carousel_image" alt="Java break business sign"/>
+                <img src="/images/carousel/Bottleneck.jpg" class="carousel_image" alt="Live music venue with audience"/>
+            </div>
+            <button class="carousel_button" id="nextBtn" onclick="nextSlide()">&#10095;</button>
+        </div>
+       
+        
+    </header>
+    <div class="sections_container">
+    <section>
+        <div>
+            <p>Population: Approximately 100,000 (including the university population)</p>
+            <p>Year of Incorporation: 1854</p>
+            <p>Region: East-Central region of the state</p>
+            <p>Classification: Urban</p>
+            <p>Average Income Level: Lawrence's average income level can vary but generally falls around the state average.</p>
+        </div>
+    </section>
+    <section>
+        <h3>Three things to do in Lawrence</h3>
+        <ol>
+            <li>Attend a KU basketball game</li>
+            <li>Check out the local music scene</li>
+            <li>Enjoy a meal on Mass St.</li>
+        </ol>
+    </section>
     </div>
+    
+    <script src="carousel.js"></script>
 </body>
 </html>
