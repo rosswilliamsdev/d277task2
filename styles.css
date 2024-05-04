@@ -40,20 +40,19 @@ body {
 /* --------------------------------------------------------Navbar */
 
 nav {
-    background-color: rgba(51, 51, 51, 0.5); /* Background color with 80% opacity */
-    color: #fff; /* Text color */
-    padding: 10px 20px; /* Padding around the navbar */
+    background-color: rgba(51, 51, 51, 0.5); 
+    color: #fff; 
+    padding: .7rem 1.2rem; 
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    border-radius: 10px;
     position: fixed;
     top: 0;
     width: 100%;
   }
   
   .nav_logo {
-    width: 50px; /* Adjust the width of your logo */
+    width: 50px; 
   }
   
   nav ul {
@@ -64,20 +63,22 @@ nav {
   }
   
   .nav-item {
-    margin-right: 20px; /* Adjust spacing between navbar items */
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
   }
   
   .nav-item a {
     text-decoration: none;
-    color: #fff; /* Text color of navbar items */
+    color: #fff; 
   }
   
   a:hover {
-    color: rgba(0,32,105,255); /* Text color on hover */
+    color: rgba(0,32,105,255);
   }
   
   form {
     display: flex;
+    margin-right: 2rem;
   }
   
   input[type="search"] {
@@ -87,16 +88,16 @@ nav {
   }
   
   button[type="submit"] {
-    background-color: #555; /* Button background color */
-    color: #fff; /* Button text color */
+    background-color: #555;
+    color: #fff;
     border: none;
     padding: 5px 10px;
     border-radius: 3px;
-    margin-left: 5px; /* Adjust spacing between search input and button */
+    margin-left: 5px; 
   }
   
   button[type="submit"]:hover {
-    background-color: #002069; /* Button background color on hover */
+    background-color: #002069; 
   }
   
  
@@ -172,45 +173,36 @@ nav {
 
   /* Carousel */
 
-  .carousel {
+  .carousel_container {
     position: relative;
-    max-width: 800px;
-    margin: 0 auto;
     overflow: hidden;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 20px;
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
-  .carousel-container {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide {
-    flex: 0 0 auto;
     width: 100%;
+    max-width: 38rem; 
+    height: 20rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.carousel_slide {
+    display: flex;
+}
+
+.carousel_image {
+    height: 100%;
+    width: auto;
     display: none;
-  }
-  
-  .active {
+}
+
+.active {
     display: block;
-  }
+}
+
+.carousel_button {
+  padding: .25rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
   
