@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Contact Us</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="/images/kansas_logo.png" alt="Kansas flag" class="nav_logo">
+        </a>
+        <ul>
+            <li class="nav-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="topeka.html">Topeka</a>
+            </li>
+            <li class="nav-item">
+                <a href="lawrence.html">Lawrence</a>
+            </li>
+            <li class="nav-item">
+                <a href="kansas_city.html">Kansas City</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <form>
+            <input type="search" placeholder="Search" aria-label="Search">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+    <div class="sections_container">
+        <section class="contact_form_container">
+            <h1>Contact Us</h1>
+        <form id="contact_form" action="#" method="post">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required><br><br>
+    
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required><br><br>
+    
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+    
+            <label for="confirmEmail">Confirm Email Address:</label><br>
+            <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm your email address" required><br><br>
+    
+            <label for="question">Question:</label><br>
+            <textarea id="question" name="question" placeholder="Ask your question here" required></textarea><br><br>
+    
+            <button type="submit">Submit</button>
+        </form>
+        </section>
+    </div>
+    
+
+    <script>
+        // JS to verify if the email fields match
+        document.getElementById("confirmEmail").addEventListener("input", () => {
+            let email = document.getElementById("email");
+            let confirmEmail = document.getElementById("confirmEmail");
+
+            if (email.value !== confirmEmail.value) {
+                confirmEmail.setCustomValidity("Email addresses do not match");
+            } else {
+                confirmEmail.setCustomValidity("");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -8,11 +8,9 @@
 </head>
 <body>
     <nav>
-        <!-- Logo -->
-        <a href="#">
+        <a href="index.html">
             <img src="/images/kansas_logo.png" alt="Kansas flag" class="nav_logo">
         </a>
-        <!-- Navbar Items -->
         <ul>
             <li class="nav-item">
                 <a href="index.html">Home</a>
@@ -26,6 +24,9 @@
             <li class="nav-item">
                 <a href="kansas_city.html">Kansas City</a>
             </li>
+            <li class="nav-item">
+                <a href="contact.html">Contact</a>
+            </li>
         </ul>
         <form>
             <input type="search" placeholder="Search" aria-label="Search">
@@ -38,9 +39,9 @@
         <div class="carousel_container">
             <button class="carousel_button" id="prevBtn" onclick="prevSlide()">&#10094;</button>
             <div class="carousel_slide">
-                <img src="/images/carousel/sunset_capitol (1).jpg" class="carousel_image" alt="capitol building"/>
-                <img src="/images/carousel/Topeka_High_School_(EJS).jpg" class="carousel_image" alt="Topeka high school"/>
-                <img src="/images/carousel/inside_capitol.jpg" class="carousel_image" alt="capitol building ceiling artwork"/>
+                <img src="/images/carousel/royals_flag.jpg" class="carousel_image" alt="royals pennant flag"/>
+                <img src="/images/carousel/western_auto_sign.jpg" class="carousel_image" alt="western auto sign"/>
+                <img src="/images/carousel/ww1_museum.jpg" class="carousel_image" alt="world war one museum"/>
             </div>
             <button class="carousel_button" id="nextBtn" onclick="nextSlide()">&#10095;</button>
         </div>
@@ -49,14 +50,52 @@
     </header>
     <div class="sections_container">
         <section>
-            <div>
-                <p>Population: Approximately 150,000 (as of the last available data)</p>
-                <p>Year of Incorporation: 1859</p>
-                <p>Region: Northeast region of the state</p>
-                <p>Classification: Urban/Suburban (parts of the city can be considered both)</p>
-                <p>Average Income Level: The income level in Kansas City, Kansas, varies across different neighborhoods, with some areas below the state average and others closer to the average or slightly above.</p>
-            </div>
+            <h3>Three things to enjoy in Kansas City</h3>
+            <ol>
+                <li>Attend a <a href="https://www.visitkc.com/visitors/events/weekend-kansas-city/weekend-sports" target="_blank" rel="noopener">pro sporting event</a></li>
+                <li><a href="https://www.nelson-atkins.org/" target="_blank" rel="noopener">The Nelson Atkins Museum of Art</a></li>
+                <li><a href="https://www.theworldwar.org/" target="_blank" rel="noopener">The National World War 1 Museum and Memorial</a></li>
+            </ol>
         </section>
+        <section>
+            <table class="demographics">
+                <caption>Demographics</caption>
+                <tr>
+                    <th>Category</th>
+                    <th></th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Population</td>
+                    <td></td>
+                    <td>150,000</td>
+                </tr>
+                <tr>
+                    <td>Founded</td>
+                    <td></td>
+                    <td>1859</td>
+                </tr>
+                <tr>
+                    <td>Region</td>
+                    <td></td>
+                    <td>Northeast</td>
+                </tr>
+                <tr>
+                    <td>Average income</td>
+                    <td></td>
+                    <td>$37,758</td>
+                </tr>
+                <tr>
+                    <td>Classification</td>
+                    <td></td>
+                    <td>Urban/Suburban</td>
+                </tr>
+            </table>
+            <aside>
+                <p>More demographic information about Kansas City can be found at <a href="https://www.census.gov/quickfacts/fact/table/kansascitycitykansas,US/PST0452232" target="_blank" rel="noopener">census.gov</a> </p>
+            </aside>
+        </section>
+        
     </div>
     <script src="carousel.js"></script>
 </body>
